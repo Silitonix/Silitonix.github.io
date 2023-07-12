@@ -19,10 +19,10 @@
   color: #121212;
   scroll-behavior: smooth;
   user-select: none;
+  margin: 0;
 }
 
 body {
-  margin: 0;
   background: var(--back);
   text-align: center;
   padding: 0 24px;
@@ -38,6 +38,7 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 nav {
   width: max-content;
@@ -51,6 +52,25 @@ nav {
   left: 0;
   right: 0;
   background: var(--back);
+}
+a{
+  position: relative;
+}
+a::after{
+  position: absolute;
+  background: var(--rgb);
+  bottom: 0px;
+  left: 50%;
+  top: auto;
+  content: '';
+  height: 3px;
+  width: 0%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+  border-radius: 5px;
+}
+a:hover::after{
+  width: 100%;
 }
 .shadow {
   border-top: 3px solid #fff1;
