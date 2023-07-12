@@ -3,7 +3,7 @@
   src: url(./font.ttf);
 }
 :root {
-  --back: #121212;
+  --back: #f0f0f0;
   --shadow-color: #0000005;
   --bounce-color: #181818;
 }
@@ -14,9 +14,11 @@
   border: none;
   font-weight: 500;
   outline: none;
-  text-shadow: 4px 4px 6px #000;
+  text-shadow: 4px 4px 6px #0002;
   text-decoration: none;
-  color: #a0a0a0;
+  color: #121212;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {
