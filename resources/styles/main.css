@@ -23,7 +23,7 @@ body {
   margin: 0;
   background: var(--back);
   text-align: center;
-  padding: 0px 24px;
+  padding: 0 24px;
 }
 
 p {
@@ -92,3 +92,4 @@ button:hover {
 svg {
   filter: drop-shadow(4px 4px 4px var(--shadow-color));
 }
+
