@@ -40,6 +40,7 @@ header {
   align-items: center;
   gap: 24px;
 }
+
 nav {
   width: max-content;
   display: flex;
@@ -53,13 +54,13 @@ nav {
   right: 0;
   background: var(--back);
 }
-a{
+.btn-nav {
   position: relative;
 }
-a::after{
+.btn-nav::after {
   position: absolute;
   background: var(--rgb);
-  bottom: 0px;
+  bottom: 0;
   left: 50%;
   top: auto;
   content: '';
@@ -69,7 +70,7 @@ a::after{
   transition: 0.2s;
   border-radius: 5px;
 }
-a:hover::after{
+.btn-nav:hover::after {
   width: 100%;
 }
 .shadow {
