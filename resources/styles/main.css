@@ -13,7 +13,6 @@
   font-family: font;
   border: none;
   font-weight: 500;
-  cursor: crosshair;
   outline: none;
   text-shadow: 4px 4px 6px #000;
   text-decoration: none;
@@ -24,7 +23,7 @@ body {
   margin: 0;
   background: var(--back);
   text-align: center;
-  padding:0px 24px;
+  padding: 0px 24px;
 }
 
 p {
@@ -74,19 +73,22 @@ nav {
 a,
 button {
   cursor: pointer;
+  transition: font-weight 0.2s;
 }
 button {
   background: var(--back);
   padding: 12px;
   border-radius: 12px;
 }
+
 a:hover,
 button:hover {
   color: var(--rgb);
+  font-weight: 900;
 }
 ::-webkit-scrollbar {
   display: none;
 }
-svg{
+svg {
   filter: drop-shadow(4px 4px 4px var(--shadow-color));
 }
