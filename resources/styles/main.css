@@ -4,7 +4,7 @@
 }
 :root {
   --back: #121212;
-  --shadow-color: #101010;
+  --shadow-color: #0000005;
   --bounce-color: #181818;
 }
 
@@ -17,13 +17,14 @@
   outline: none;
   text-shadow: 4px 4px 6px #000;
   text-decoration: none;
-  color: #808080;
+  color: #c0c0c0;
 }
 
 body {
   margin: 0;
   background: var(--back);
   text-align: center;
+  padding:0px 24px;
 }
 
 p {
