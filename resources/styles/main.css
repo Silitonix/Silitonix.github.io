@@ -20,6 +20,7 @@
   scroll-behavior: smooth;
   user-select: none;
   margin: 0;
+  cursor: none;
 }
 
 body {
@@ -53,6 +54,7 @@ nav {
   left: 0;
   right: 0;
   background: var(--back);
+  box-shadow: #f0f0f060 0px 20px 20px;
 }
 .btn-nav {
   position: relative;
@@ -67,7 +69,7 @@ nav {
   height: 3px;
   width: 0%;
   transform: translateX(-50%);
-  transition: 0.2s;
+  transition: 0.1s;
   border-radius: 5px;
 }
 .btn-nav:hover::after {
@@ -93,9 +95,31 @@ nav {
 .rgb {
   color: var(--rgb);
 }
+
+.mouse-lerp {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  left: var(--mouse-x-lerp);
+  top: var(--mouse-y-lerp);
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--rgb);
+  border-radius: 100%;
+  pointer-events: none;
+}
+.mouse {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+  transform: translate(-50%, -50%);
+  background: var(--rgb);
+  border-radius: 100%;
+  pointer-events: none;
+}
 a,
 button {
-  cursor: pointer;
   transition: font-weight 0.2s;
 }
 button {
