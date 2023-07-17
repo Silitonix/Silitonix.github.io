@@ -103,7 +103,7 @@ nav {
   left: var(--mouse-x-lerp);
   top: var(--mouse-y-lerp);
   transform: translate(-50%, -50%);
-  border: 1px solid var(--rgb);
+  border: 2px solid var(--rgb);
   border-radius: 100%;
   pointer-events: none;
 }
@@ -121,6 +121,10 @@ nav {
 a,
 button {
   transition: font-weight 0.2s;
+}
+a:hover .mouse-lerp,
+button:hover .mouse-lerp {
+  opacity: 0;
 }
 button {
   background: var(--back);
