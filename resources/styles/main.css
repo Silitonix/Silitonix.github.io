@@ -103,7 +103,7 @@ nav {
   left: var(--mouse-x-lerp);
   top: var(--mouse-y-lerp);
   transform: translate(-50%, -50%);
-  border: 3px solid var(--rgb);
+  border: 2px solid var(--rgb);
   border-radius: 100%;
   pointer-events: none;
 }
